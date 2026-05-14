@@ -1,0 +1,281 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$metadata": {
+    "brand": "Cara",
+    "version": "1.0.0",
+    "description": "Design tokens for the Cara electric bicycle brand design system"
+  },
+
+  "color": {
+    "$type": "color",
+    "brand": {
+      "orange": {
+        "$value": "#FF5D00",
+        "$description": "Primary brand color. Used for CTA buttons, links, logo, accent text."
+      },
+      "orange-10": {
+        "$value": "rgba(255, 93, 0, 0.1)",
+        "$description": "Subtle orange tint. Used for section backgrounds and fleet section gradient."
+      }
+    },
+    "neutral": {
+      "black": {
+        "$value": "#000000",
+        "$description": "Body text, specs text."
+      },
+      "white": {
+        "$value": "#FFFFFF",
+        "$description": "Reversed text on dark or image backgrounds."
+      },
+      "gray-light": {
+        "$value": "#F9F9F9",
+        "$description": "Footer background, soft section backgrounds."
+      },
+      "gray-mid": {
+        "$value": "#EDEDED",
+        "$description": "Product section background. Neutral to let the bike photography pop."
+      },
+      "gray-text": {
+        "$value": "#6B6B6B",
+        "$description": "Subtext, captions, footer tagline."
+      }
+    },
+    "semantic": {
+      "text-primary": {
+        "$value": "{color.neutral.black}",
+        "$description": "Default body and headline text."
+      },
+      "text-secondary": {
+        "$value": "{color.neutral.gray-text}",
+        "$description": "Supporting text, captions, footnotes."
+      },
+      "text-reversed": {
+        "$value": "{color.neutral.white}",
+        "$description": "Text on dark or image backgrounds."
+      },
+      "text-accent": {
+        "$value": "{color.brand.orange}",
+        "$description": "Accent or highlighted text (e.g. price callouts)."
+      },
+      "bg-primary": {
+        "$value": "{color.neutral.white}",
+        "$description": "Default page background."
+      },
+      "bg-section-product": {
+        "$value": "{color.neutral.gray-mid}",
+        "$description": "Product section background."
+      },
+      "bg-section-fleet": {
+        "$value": "linear-gradient(rgba(255, 93, 0, 0.05) 0%, rgba(249, 249, 249, 0.5) 100%)",
+        "$description": "Fleet section — barely perceptible warm orange tint gradient."
+      },
+      "bg-footer": {
+        "$value": "{color.neutral.gray-light}",
+        "$description": "Footer background."
+      },
+      "interactive-primary": {
+        "$value": "{color.brand.orange}",
+        "$description": "Primary interactive color for buttons, links, hover states."
+      },
+      "nav-bg": {
+        "$value": "rgba(255, 255, 255, 0.25)",
+        "$description": "Frosted glass nav background layer 1."
+      },
+      "nav-border": {
+        "$value": "rgba(0, 0, 0, 0.2)",
+        "$description": "Frosted glass nav border/shadow layer."
+      }
+    }
+  },
+
+  "font": {
+    "$type": "fontFamily",
+    "display": {
+      "$value": "BBH Hegarty",
+      "$description": "Brand display/wordmark typeface. Used exclusively for the 'cara' wordmark. File: BBHHegarty-Regular.ttf"
+    },
+    "ui": {
+      "$value": "Manrope",
+      "$description": "Primary UI and body typeface. Variable font, weights 100–900. Used for ALL text except the wordmark. File: Manrope-VariableFont_wght.ttf"
+    }
+  },
+
+  "fontWeight": {
+    "$type": "fontWeight",
+    "regular": { "$value": 400 },
+    "medium":  { "$value": 500 },
+    "semibold": { "$value": 600 },
+    "bold":    { "$value": 700 }
+  },
+
+  "fontSize": {
+    "$type": "dimension",
+    "wordmark":   { "$value": "44px",  "$description": "BBH Hegarty wordmark size in header and footer." },
+    "display":    { "$value": "60px",  "$description": "Manrope display headings." },
+    "subheading": { "$value": "26px",  "$description": "Large body / subheadings." },
+    "ui":         { "$value": "18px",  "$description": "UI labels, nav links, buttons, specs." },
+    "caption":    { "$value": "14px",  "$description": "Captions, footnotes." }
+  },
+
+  "lineHeight": {
+    "display":    { "$value": 1.25,  "$description": "For display headings (60px)." },
+    "subheading": { "$value": 1.5,   "$description": "For large body / subheadings (26px)." },
+    "ui":         { "$value": 1.0,   "$description": "For UI labels and buttons (18px)." }
+  },
+
+  "letterSpacing": {
+    "default": {
+      "$value": "0.05em",
+      "$description": "Applied consistently across ALL UI text. Gives the brand an airy, open feel."
+    }
+  },
+
+  "typography": {
+    "$description": "Composite typography styles. Font family is always Manrope except wordmark.",
+    "wordmark": {
+      "fontFamily":    { "$value": "{font.display}" },
+      "fontSize":      { "$value": "{fontSize.wordmark}" },
+      "fontWeight":    { "$value": "{fontWeight.regular}" },
+      "color":         { "$value": "{color.brand.orange}" },
+      "$description":  "The 'cara' wordmark. BBH Hegarty, orange, header and footer only."
+    },
+    "display": {
+      "fontFamily":    { "$value": "{font.ui}" },
+      "fontSize":      { "$value": "{fontSize.display}" },
+      "fontWeight":    { "$value": "{fontWeight.medium}" },
+      "lineHeight":    { "$value": "{lineHeight.display}" },
+      "letterSpacing": { "$value": "{letterSpacing.default}" },
+      "$description":  "Hero/section display headlines. Sentence case. Terminal period."
+    },
+    "subheading": {
+      "fontFamily":    { "$value": "{font.ui}" },
+      "fontSize":      { "$value": "{fontSize.subheading}" },
+      "fontWeight":    { "$value": "{fontWeight.medium}" },
+      "lineHeight":    { "$value": "{lineHeight.subheading}" },
+      "letterSpacing": { "$value": "{letterSpacing.default}" },
+      "$description":  "Large body copy and section subheadings."
+    },
+    "ui": {
+      "fontFamily":    { "$value": "{font.ui}" },
+      "fontSize":      { "$value": "{fontSize.ui}" },
+      "fontWeight":    { "$value": "{fontWeight.bold}" },
+      "lineHeight":    { "$value": "{lineHeight.ui}" },
+      "letterSpacing": { "$value": "{letterSpacing.default}" },
+      "$description":  "Navigation links, button labels, specs. Title case for nav/buttons."
+    },
+    "caption": {
+      "fontFamily":    { "$value": "{font.ui}" },
+      "fontSize":      { "$value": "{fontSize.caption}" },
+      "fontWeight":    { "$value": "{fontWeight.regular}" },
+      "letterSpacing": { "$value": "{letterSpacing.default}" },
+      "$description":  "Captions, footnotes, taglines."
+    }
+  },
+
+  "casing": {
+    "$description": "Text casing rules by context.",
+    "headlines":   { "$value": "sentence-case", "$description": "All headlines. Terminal period required." },
+    "body":        { "$value": "sentence-case" },
+    "navigation":  { "$value": "title-case",    "$description": "Nav links: Product, About, Contact." },
+    "buttons":     { "$value": "title-case",    "$description": "Sign Up, Learn More, Explore." },
+    "footerLinks": { "$value": "title-case",    "$description": "Features, Test Ride, Fleet, etc." }
+  },
+
+  "borderRadius": {
+    "$type": "dimension",
+    "button": {
+      "$value": "40px",
+      "$description": "Fully pill-shaped. Used on all buttons (primary and outline)."
+    },
+    "card": {
+      "$value": "20px",
+      "$description": "Soft rounded corners for cards, image frames, and section containers."
+    },
+    "nav": {
+      "$value": "30px",
+      "$description": "Floating pill-shaped navigation header."
+    }
+  },
+
+  "spacing": {
+    "$type": "dimension",
+    "section-vertical":    { "$value": "100px",  "$description": "Top and bottom padding for all major sections." },
+    "section-horizontal-min": { "$value": "150px", "$description": "Minimum horizontal margin at 1440px viewport." },
+    "section-horizontal-max": { "$value": "250px", "$description": "Maximum horizontal margin at 1440px viewport." },
+    "column-gap":          { "$value": "80px",   "$description": "Gap between major layout columns." },
+    "element-gap-sm":      { "$value": "20px",   "$description": "Small gap between elements within a section." },
+    "element-gap-md":      { "$value": "40px",   "$description": "Medium gap between elements within a section." }
+  },
+
+  "component": {
+    "button": {
+      "primary": {
+        "background":    { "$value": "{color.brand.orange}" },
+        "color":         { "$value": "{color.neutral.white}" },
+        "borderRadius":  { "$value": "{borderRadius.button}" },
+        "border":        { "$value": "none" },
+        "width":         { "$value": "133px" },
+        "height":        { "$value": "40px" },
+        "fontFamily":    { "$value": "{font.ui}" },
+        "fontWeight":    { "$value": "{fontWeight.bold}" },
+        "fontSize":      { "$value": "{fontSize.ui}" },
+        "letterSpacing": { "$value": "{letterSpacing.default}" },
+        "shadow":        { "$value": "none" },
+        "$description":  "Primary CTA. Orange fill, white text, pill shape, flat (no shadow)."
+      },
+      "outline": {
+        "background":    { "$value": "transparent" },
+        "color":         { "$value": "{color.brand.orange}" },
+        "borderRadius":  { "$value": "{borderRadius.button}" },
+        "border":        { "$value": "1.5px solid {color.brand.orange}" },
+        "width":         { "$value": "133px" },
+        "height":        { "$value": "40px" },
+        "fontFamily":    { "$value": "{font.ui}" },
+        "fontWeight":    { "$value": "{fontWeight.bold}" },
+        "fontSize":      { "$value": "{fontSize.ui}" },
+        "letterSpacing": { "$value": "{letterSpacing.default}" },
+        "shadow":        { "$value": "none" },
+        "$description":  "Secondary action. Orange border and text, transparent fill, flat."
+      }
+    },
+    "nav": {
+      "background":     { "$value": "{color.semantic.nav-bg}" },
+      "borderLayer":    { "$value": "{color.semantic.nav-border}" },
+      "borderRadius":   { "$value": "{borderRadius.nav}" },
+      "backdropFilter": { "$value": "blur(12px)" },
+      "linkFontWeight": { "$value": "{fontWeight.bold}" },
+      "linkFontSize":   { "$value": "{fontSize.ui}" },
+      "linkCasing":     { "$value": "{casing.navigation}" },
+      "$description":   "Floating frosted-glass pill nav. Hover: opacity 0.8."
+    }
+  },
+
+  "shadow": {
+    "none": {
+      "$value": "none",
+      "$description": "No shadows used on buttons or cards. Depth achieved through bg color changes and photography."
+    }
+  },
+
+  "imagery": {
+    "$description": "Photography and imagery guidelines (non-token reference).",
+    "tone":          { "$value": "warm, natural, earthy — cream, peach, muted greens, warm greys" },
+    "grade":         { "$value": "warm, slightly muted — not over-saturated" },
+    "style":         { "$value": "lifestyle and product photography only — no illustrations or hand-drawn elements" },
+    "cropStyle":     { "$value": "full-bleed for hero; circle crop for fleet/community" },
+    "productBg":     { "$value": "{color.neutral.gray-mid}" }
+  },
+
+  "iconography": {
+    "$description": "Icon guidance.",
+    "system":        { "$value": "none native — Lucide recommended (stroke-based, 2px weight, clean geometric)" },
+    "lucideCDN":     { "$value": "https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" },
+    "emoji":         { "$value": "never — typography-first approach" }
+  },
+
+  "animation": {
+    "easing":    { "$value": "ease-in-out", "$description": "Smooth, gentle eases. No harsh bounces." },
+    "duration":  { "$value": "300ms",       "$description": "Default transition duration for hover/focus states." },
+    "hoverOpacity": { "$value": 0.8,        "$description": "Default opacity reduction on interactive element hover." }
+  }
+}
