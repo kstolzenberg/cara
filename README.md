@@ -1,12 +1,15 @@
 # Cara
 Concept for a car-alternative e-bike brand. 
 
-- Brand concept composed in Figma
-- Brand assets created with Fuser Studio
+- Brand idea created in Figma
+- Brand assets generated with Fuser Studio
+- Brand Guidelines created with Claude
 - Landing Page created with Claude Chat
-- Dashboard created with Claude Design
+- Dashboard + Design System created with Claude Design
 - Deployed on [Github Pages](https://kstolzenberg.github.io/cara/)
 
+<br>
+<img width="2064" height="1548" alt="design system" src="https://github.com/user-attachments/assets/04457c33-4587-4cbb-99f4-52de5a638023" />
 <img width="2650" height="2288" alt="home" src="https://github.com/user-attachments/assets/30b692e0-2b4d-44cb-8976-5a6194853e1b" />
 <img width="2722" height="2238" alt="dash1" src="https://github.com/user-attachments/assets/86d84cc5-ba30-4af7-a03c-4340f7958798" />
 <img width="2722" height="2238" alt="dash2" src="https://github.com/user-attachments/assets/9c0d67e0-ba24-45c8-a37f-ddd0225faff6" />
