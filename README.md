@@ -1,13 +1,13 @@
 # Cara
 Brand Concept and AI-generated interfaces for a car-alternative ebike brand. 
 
-1. Brand concept created in Figma; I created the name, basic principles, fonts, colors, landing page structure.
+1. Brand concept created in Figma; I chose the name, basic principles, fonts, colors, landing page structure.
 2. Brand Guidelines expanded, written by **Claude**
 3. Design System expanded, built by **Claude**
 4. Brand images, videos generated with [Fuser Studio](https://fuser.studio/)
 5. Landing Page expanded, built by **Claude**
-7. Interactive Dashboard built by **Claude Design**
-8. Deployed on [Github Pages](https://kstolzenberg.github.io/cara/)
+7. [Interactive Dashboard](https://kstolzenberg.github.io/cara/fleet-dash.html) built by **Claude Design**
+8. All deployed on [Github Pages](https://kstolzenberg.github.io/cara/)
 
 <br>
 <img width="2164" height="2336" alt="brand guidelines" src="https://github.com/user-attachments/assets/6e0cdf00-6979-4987-b122-8d44f62b1746" />
