@@ -1,7 +1,7 @@
 # Cara
 Brand Concept + AI-generated interfaces for a car-alternative ebike brand. 
 
-1. Brand concept created in Figma; I chose the name, basic principles, fonts, colors, landing page reference.
+1. Brand concept created in Figma; I created the name, basic principles, fonts, colors, landing page reference.
 2. Brand Guidelines: expanded, written by **Claude**
 3. Design System: expanded, built by **Claude**
 4. Brand Images and Videos: generated with [Fuser Studio](https://fuser.studio/)
