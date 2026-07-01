@@ -6,7 +6,7 @@ AI-generated interfaces for a car-alternative ebike brand.
 3. Design System: expanded by Claude Design
 4. Brand Assets, Images, Videos: generated with Fuser Studio
 5. [Landing Page](https://kstolzenberg.github.io/cara/): built by Claude
-7. [Interactive Dashboard](https://kstolzenberg.github.io/cara/fleet-dash.html): referenced Brand Guidelines, Design System and new requirements; built by Claude Design
+7. [Interactive Dashboard](https://kstolzenberg.github.io/cara/fleet-dash.html): referenced Brand Guidelines, Design System and additional requirements; built by Claude Design
 8. All deployed on [Github Pages](https://kstolzenberg.github.io/cara/)
 
 <br>
